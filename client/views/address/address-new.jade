@@ -4,31 +4,31 @@
     form
       .form-group
         label(for='contactName') Name
-        input.form-control#contactName(type='text', name='name', ng-model='contact.name')
+        input.form-control#contactName(type='text', name='contactName', ng-model='contact.name')
       .form-group
         label(for='contactAddress') Address
-        input.form-control#contactAddress(type='text', name='about', ng-model='contact.address')
+        input.form-control#contactAddress(type='text', name='contactAddress', ng-model='contact.address')
       .form-group
         label(for='contactBirthday') Birthday
-        input.form-control#contactBirthday(type='date', name='date', ng-model='contact.birthday')
+        input.form-control#contactBirthday(type='date', name='contactBirthday', ng-model='contact.birthday')
       .form-group
         label(for='contactPhone') Phone
-        input.form-control#contactPhone(type='text', name='name', ng-model='contact.phone')
+        input.form-control#contactPhone(type='tel', name='contactPhone', ng-model='contact.phone')
       .form-group
         label(for='contactEmail') Email
-        input.form-control#contactEmail(type='text', name='about', ng-model='contact.email')
+        input.form-control#contactEmail(type='text', name='contactEmail', ng-model='contact.email')
       .form-group
         label(for='contactHomepage') Homepage
-        input.form-control#contactHomepage(type='text', name='name', ng-model='contact.homepage')
+        input.form-control#contactHomepage(type='text', name='contactHomepage', ng-model='contact.homepage')
       .form-group
         label(for='contactTwitter') Twitter
-        input.form-control#contactTwitter(type='text', name='about', ng-model='contact.twitter')
+        input.form-control#contactTwitter(type='text', name='contactTwitter', ng-model='contact.twitter')
       .form-group
         label(for='contactFacebook') Facebook
-        input.form-control#contactFacebook(type='text', name='about', ng-model='contact.facebook')
+        input.form-control#contactFacebook(type='text', name='contactFacebook', ng-model='contact.facebook')
       .form-group
         label(for='photoUpload') Photo Upload
-        input(type='file')
-        img
+        input#photo(type='file')
+        img#preview
       .form-group
         button.btn.form-control.btn-success(ng-click='newContact(contact)') Save Contact

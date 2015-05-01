@@ -10,8 +10,8 @@ nav.navbar.navbar-default(ng-controller='NavCtrl')
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav(ng-show='activeUser')
         li: a(ui-sref='home'): i.fa.fa.fa-home &nbsp; Home
-        li: a(ui-sref='address.new'): i.fa.fa.fa-home &nbsp; New
-        li: a(ui-sref='address.list'): i.fa.fa.fa-home &nbsp; All Contacts
+        li: a(ui-sref='address.new'): i.fa.fa.fa-bolt &nbsp; New
+        li: a(ui-sref='address.list'): i.fa.fa.fa-bars &nbsp; All Contacts
         li: button.btn.btn-danger(ng-click='logout()'): i.fa.fa-sign-out &nbsp; {{displayName}}
       ul.nav.navbar-nav(ng-hide='activeUser')
         li: a(ui-sref='home'): i.fa.fa.fa-home &nbsp; Home
