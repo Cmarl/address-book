@@ -1,0 +1,34 @@
+.row
+  .col-xs-6.col-xs-offset-3
+    h2 New Entry
+    form
+      .form-group
+        label(for='contactName') Name
+        input.form-control#contactName(type='text', name='name', ng-model='contact.name')
+      .form-group
+        label(for='contactAddress') Address
+        input.form-control#contactAddress(type='text', name='about', ng-model='contact.address')
+      .form-group
+        label(for='contactBirthday') Birthday
+        input.form-control#contactBirthday(type='date', name='date', ng-model='contact.birthday')
+      .form-group
+        label(for='contactPhone') Phone
+        input.form-control#contactPhone(type='text', name='name', ng-model='contact.phone')
+      .form-group
+        label(for='contactEmail') Email
+        input.form-control#contactEmail(type='text', name='about', ng-model='contact.email')
+      .form-group
+        label(for='contactHomepage') Homepage
+        input.form-control#contactHomepage(type='text', name='name', ng-model='contact.homepage')
+      .form-group
+        label(for='contactTwitter') Twitter
+        input.form-control#contactTwitter(type='text', name='about', ng-model='contact.twitter')
+      .form-group
+        label(for='contactFacebook') Facebook
+        input.form-control#contactFacebook(type='text', name='about', ng-model='contact.facebook')
+      .form-group
+        label(for='photoUpload') Photo Upload
+        input(type='file')
+        img
+      .form-group
+        button.btn.form-control.btn-success(ng-click='newContact(contact)') Save Contact
